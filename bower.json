@@ -1,0 +1,22 @@
+{
+  "name": "fbkpage",
+  "description": "Page for my mate and assignment at this same time.",
+  "main": "index.js",
+  "authors": [
+    "MG"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/BulbarXantus/fbkpage",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.2",
+    "angular-route": "^1.6.2"
+  }
+}
