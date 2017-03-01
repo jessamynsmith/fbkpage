@@ -6,9 +6,59 @@
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <style type="text/css">
+    	body {
+    		padding: 60px 30px 10px 30px;
+    		background-image: url("dog-313357_1280.jpg");
+    	}
+    	.container {
+    		margin-top: 10px;  /*I have added this to keep nav pills in the middle*/
+    	}
+    	.logo {
+    		border: solid 2px;
+    		border-color: #E7E7E7;
+    		border-radius: 5%;
+    		margin-top: -15px;
+	   		height: 40px;
+    		width: 90px;
+    	}
+    	#maincontainer {
+    		display: inline-flex;
+    		margin-left: auto;
+    		margin-right: auto;
+    		background-image: url("happy_dog.png");
+    		width: 1366px;
+    		height: 768px;
+    	}
+    </style>
 </head>
 <body>
-    <h1>Welcome!</h1>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<img class="logo" alt="Logo" src="fbklogo1.png">
+				</a>
+			</div>
+			<ul class="nav nav-pills navbar-right">
+				<li class="active"><a href="#about">About Us</a></li>
+				<li><a href="#pricing">Pricing</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="maincontainer">
+    		<h1>Welcome to Foxhill Boarding Kennels!</h1>
+    		<p>Here your pet feels like at home.</p>
+    		<p>Foxhill Boarding Kennels have over 20 years of experience in providing caring, reliable and professional service to all dog owners. We offer long and short-term boarding for all size of dogs.
+			Foxhill Boarding Kennels is set on a large 187 acres of farmland with access to river. Kennels were purpose-build and are spacious (11x4 foot-singles, 11x5 foot-doubles and two large “familly kennels”), comfortable, fully insulated and designed to reduce the amount of stress that dog may experience while staying away from their home.</p>
+    		<p>Dogs are walked daily and we also have 4500sq feet of secure play area. Our kennels are situated directly behind our family home and for added security we have CCTV system in place.
+			We have wide range of dog food available, but if you wish you can provide your own. We are also happy to administer medication to a certain extent if required.
+			Our goal is to give your pet a safe and happy experience so while you are away you can be sure that your pet is receiving the best care possible. With a vet on call 24/7 we can assure you that your pet will have a comfortable, safe and enjoyable stay.</p>
+    </div>
 </body>
 </html>
 
