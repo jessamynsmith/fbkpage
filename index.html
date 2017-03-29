@@ -1,134 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Foxhill Boarding Kennels</title>
-    <base href="/"> <!-- needed for Angular HTML5 mode -->
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"> <!--social media fonts -->
-	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-    <style type="text/css">
-    	body {
-    		padding-top: 60px;
-    		background-color: #34313a;
-    	}
-    	.container {			/*I have added this to keep nav pills in the middle*/
-    		margin-top: 10px;  
-    	}
-    	.logo {
-    		border: solid 2px;
-    		border-color: #E7E7E7;
-    		border-radius: 5%;
-    		margin-top: -15px;
-	   		height: 40px;
-    		width: 90px;
-    	}
-    	.navbar-brand {
-    		
-    		display: flex;
-    		font-size: 30px;
-
-    	}
-    	.jumbotron {
-    		background-image: url("dog-313357.jpg");
-    		margin: 0px;
-    		padding: 0px;
-    		
-    	}
-    	.mgcontainer {
-    		background-color: #34313a;
-    		opacity: 0.8;
-    		width: 1170px;
-    		margin-top: 0px;
-    		margin-left: auto;
-    		margin-right: auto;
-    		color: white;
-    	}
-    	.box1 {
-    		margin-bottom: 30px;
-    	}
-   
-    	.box2 {
-    		margin: 0px 20px 40px 20px;
-    	}
-    	.box3 {
-    		margin: 0px 20px 40px 20px;
-    	}
-    	.counter {
-    		border-color: black;
-    	}
-    	.imgmg {
-    		width: 360px;
-    		height: 255px;
-    	}
-
-    </style>
-</head>
-<body>
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">
-					<img class="logo" alt="Logo" src="fbklogo1.png">Foxhill Boarding Kennels
-				</a>
+	<head>
+		<title>Foxhill Boarding Kennels</title>
+		<base href="/"> <!-- needed for Angular HTML5 mode -->
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+		<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"> <!--social media fonts -->
+		<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+		<link rel="stylesheet" type="text/css" href="mg_styling.css"> <!--my own styling-->
+		
+	</head>
+	<body>
+		<!--here is my navbar-->
+		<div class="navbar navbar-default navbar-fixed-top mg_navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img class="logo img-responsive" alt="Logo" src="fbklogo1.png"><p class="pnav"> Foxhill Boarding Kennels</p>
+					</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav nav-pills navbar-right">
+						<li class="active"><a href="#about">About Us</a></li>
+						<li><a href="pricing.html">Pricing</a></li>
+						<li><a href="contact_us.html">Contact Us</a></li>
+					</ul>
+				</div>
 			</div>
-			<ul class="nav nav-pills navbar-right">
-				<li class="active"><a href="#about">About Us</a></li>
-				<li><a href="pricing.html">Pricing</a></li>
-				<li><a href="contact_us.html">Contact Us</a></li>
-			</ul>
 		</div>
-	</nav>
-	<div class="jumbotron">
-    		<div class="container mgcontainer">
-    			<div class="box1 row">
-    				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-    					<h1 align="center">Welcome to Foxhill Boarding Kennels!</h1>
-    					<h2 align="center">Here your pets feel like at home.</h2>
-    				</div>
-    			</div>
-    			<div class="box2 row">
-    				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-						<img class="img-responsive img-thumbnail imgmg" alt="HappyDog" src="happy_dog.png">
-					</div>    			
-    				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-    					<p>Foxhill Boarding Kennels have over 20 years of experience in providing caring, reliable and professional service to all dog owners. We offer long and short-term boarding for all size of dogs.</br>
-						Foxhill Boarding Kennels is set on a large 187 acres of farmland with access to river. Kennels were purpose-build and are spacious (11x4 foot-singles, 11x5 foot-doubles and two large “familly kennels”), comfortable, fully insulated and designed to reduce the amount of stress that dog may experience while staying away from their home.</p>
-					</div>
+		<!--here starts my page-->
+		<div class="container">
+			<div class="jumbotron mgcontainer row">
+				<div class="box1">
+					<h1 >Welcome to Foxhill Boarding Kennels!</h1>
+					<h2 >Here your pets will feel like at home.</h2>
 				</div>
-				<div class="box3 row">
-					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">   				
-						<p>Dogs are walked daily and we also have 4500sq feet of secure play area. Our kennels are situated directly behind our family home and for added security we have CCTV system in place.
-						We have wide range of dog food available, but if you wish you can provide your own. We are also happy to administer medication to a certain extent if required.</br>
-						Our goal is to give your pet a safe and happy experience so while you are away you can be sure that your pet is receiving the best care possible. With a vet on call 24/7 we can assure you that your pet will have a comfortable, safe and enjoyable stay.</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-						<img class="img-responsive img-thumbnail imgmg" alt="RunningDogs" src="running_dogs.jpg">
-					</div>
+				<div class="box2">
+					
+					<img class="img-responsive img-thumbnail imgmg col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" alt="HappyDog" src="happy_dog.png">
+					
+					<p class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						Foxhill Boarding Kennels have over 20 years of experience in providing caring, reliable and professional service to all dog owners. We offer long and short-term boarding for all size of dogs.<br>
+					Foxhill Boarding Kennels is set on a large 187 acres of farmland with access to river. Kennels were purpose-build and are spacious (11x4 foot-singles, 11x5 foot-doubles and two large “familly kennels”), comfortable, fully insulated and designed to reduce the amount of stress that dog may experience while staying away from their home.</p>
+					
 				</div>
-				<div class="footer row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-					<!-- Start of SimpleHitCounter Code -->
-					<div class="counter col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="center">
-						<a href="http://www.simplehitcounter.com" target="_blank"><img src="http://simplehitcounter.com/hit.php?uid=2240754&f=16777215&b=0" border="0" height="18" width="83" alt="web counter"></a><br><a href="http://www.simplehitcounter.com" target="_blank" style="text-decoration:none;">web counter</a>
-					</div>
-					<!-- End of SimpleHitCounter Code -->
-					<div class="social fa-lg col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="center">
-  						<a class="btn btn-info" href="font-awesome-4.7.0/css/font-awesome.css" aria-label="Twitter">
-  							<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
-  						</a>
-  						<a class="btn btn-primary" href="font-awesome-4.7.0/css/font-awesome.css" aria-label="Facebook">
-  							<i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
-  						</a>
-  						<a class="btn btn-danger" href="font-awesome-4.7.0/css/font-awesome.css" aria-label="GooglePlus">
-  							<i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
-  						</a>
+				<!--I need to insert vertical break line which will only appear when @media (min-width: 768px) -->
+				<div class="box3">
+					
+					<p class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">Dogs are walked daily and we also have 4500sq feet of secure play area. Our kennels are situated directly behind our family home and for added security we have CCTV system in place.
+						We have wide range of dog food available, but if you wish you can provide your own. We are also happy to administer medication to a certain extent if required.<br>
+					Our goal is to give your pet a safe and happy experience so while you are away you can be sure that your pet is receiving the best care possible. With a vet on call 24/7 we can assure you that your pet will have a comfortable, safe and enjoyable stay.</p>
+					
+					<img class="img-responsive img-thumbnail imgmg col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" alt="RunningDogs" src="running_dogs.jpg">
+					
+				</div>
+				<!--here is my bottom navbar-->
+				<div class="navbar navbar-default navbar-fixed-bottom mg_bottom">
+					<div class="container">
+						<div class="navbar-text pull-left">
+							<p>Made by MG</p>
+						</div>
+						<div class="navbar-text pull-right">
+							<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+							<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+							<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
-    </div>
-</body>
+		</div>
+	</body>
 </html>
-
